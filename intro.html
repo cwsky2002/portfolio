@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .sw
+      {
+        color : blue;
+      }
+      #smc
+      {
+        font-weight : bold;
+        color : green;
+      }
+    </style>
+    <script>
+      function BodySetColor(color)
+      {
+        document.querySelector('body').style.color=color;
+      }
+    </script>
+
+    <script>
+      function BodySetBackgroundColor(color)
+      {
+        document.querySelector('body').style.backgroundColor=color;
+      }
+    </script>
+  </head>
+  <body>
+    <h1><a href="Index.html">배창우의 프로필</a></h1>
+    <h3 style="background-color : black; color : white">1학년-9반-10번</h3>
+    <h4><span class="sw">소프트웨어 1등</span><span id="smc">세명컴퓨터고등학교</span></h4>
+    <input type="button" id="pink_white" value="pink" onclick="
+    BodySetColor('white');
+    BodySetBackgroundColor('pink');
+    ">
+
+    <input type="button" id="question" value="email" onclick="
+    alert('cwsky2@gmail.com');
+    ">
+    <script>
+      var day=
+      {
+        "monday" : "happy",
+        "tuesday" : "sad",
+        "wendesday" : "exciting"
+      };
+    </script>
+    <script>
+      for(var key in day)
+      {
+        
+       document.wtite(key+":"+day[key]+'<br>');
+      }
+    </script>
+    <script>
+      var month=["monday", "tuesday", "wendesday", "Thursday", "friday", "saturday"]
+    </script>
+    <script>
+      document.write ("오늘은"+month[2]+"입니다.");
+    </script>
+    <ol>
+      <li><a href="1.html">a</a></li>
+      <li><a href="2.html">b</a></li>
+      <li><a href="3.html">c</a></li>
+    </ol>
+  </body>
+</html>
